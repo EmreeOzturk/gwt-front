@@ -1,0 +1,232 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "caller",
+				"type": "address"
+			}
+		],
+		"name": "NotAuthorized",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "PaymentFailed",
+		"type": "error"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "oldAdmin",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "newAdmin",
+				"type": "address"
+			}
+		],
+		"name": "AdminChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "oldPaymentToken",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "newPaymentToken",
+				"type": "address"
+			}
+		],
+		"name": "PaymentTokenChanged",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [],
+		"name": "PaymentTokenClaimed",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [],
+		"name": "PaymentsRefunded",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_paymentToken",
+				"type": "address"
+			}
+		],
+		"name": "changePaymentToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "claimPaymentToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "depositFund",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "refundUsers",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_admin",
+				"type": "address"
+			}
+		],
+		"name": "setAdmin",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_o4gAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_paymentToken",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "admin",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "fundOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllFundOwnersInfo",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "_fundOwners",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "_funds",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "isFundOwner",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "o4gAddress",
+		"outputs": [
+			{
+				"internalType": "contract IO4G",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "paymentToken",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

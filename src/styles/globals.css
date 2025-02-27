@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  @apply font-semibold 2xl:font-bold text-base md:text-xl  2xl:text-2xl;
+}
+h2 {
+  @apply font-semibold  2xl:font-bold text-sm  2xl:text-2xl;
+}
+h3 {
+  @apply font-medium md:font-semibold text-xs md:text-sm  2xl:text-xl;
+}
+h4 {
+  @apply font-medium text-xs md:text-sm  2xl:text-lg;
+}
+h5 {
+  @apply font-medium text-xs xl:text-sm;
+}
+
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); */
+
+.react-flow .react-flow__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #784be8;
+}
+
+.react-flow .react-flow__handle-top {
+  top: -10px;
+}
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow .react-flow__handle-bottom {
+  bottom: -10px;
+}
+
+.react-flow .react-flow__node {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.react-flow .react-flow__edge path,
+.react-flow__connectionline path {
+  stroke-width: 2;
+}
+
+.wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+}
+.launch h1 {
+  
+  color: #fff;
+  text-align: center;
+  font-family: Mont;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 25.2px;
+  @apply font-montserrat  text-sm md:text-3xl  xl:text-[42px] tracking-[15px] xl:tracking-[25.2px] leading-relaxed;
+}
+
+.node {
+  width: 180px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  padding: 12px 15px;
+}
+
+.node :global .react-flow__handle {
+  visibility: hidden;
+}
+
+.label {
+  text-align: center;
+}

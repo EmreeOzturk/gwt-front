@@ -1,0 +1,97 @@
+{
+  "0x1": {
+    "chainId": "0x1",
+    "name": "Ethereum Mainnet",
+    "token": "ETH",
+    "chainName": "Ethereum Mainnet",
+    "nativeCurrency": { "name": "Etherium", "symbol": "ETH", "decimals": 18 },
+    "rpcUrls": [
+      "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    ],
+    "blockExplorerUrls": ["https://etherscan.io/"],
+    "explorer": "https://etherscan.io/",
+    "faucets": ["https://faucet.metamask.io/"]
+  },
+  "0x61": {
+    "chainId": "0x61",
+    "name": "Binance Smart Chain Testnet",
+    "token": "tBNB",
+    "chainName": "Binance Smart Chain Testnet",
+    "nativeCurrency": {
+      "name": "Binance Coin",
+      "symbol": "tBNB",
+      "decimals": 18
+    },
+    "rpcUrls": ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
+    "blockExplorerUrls": ["https://testnet.bscscan.com/"],
+    "explorer": "https://testnet.bscscan.com/",
+    "faucets": ["https://testnet.binance.org/faucet-smart"]
+  },
+  "0x38": {
+    "chainId": "0x38",
+    "name": "Binance Smart Chain",
+    "token": "BNB",
+    "chainName": "Binance Smart Chain",
+    "nativeCurrency": {
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "decimals": 18
+    },
+    "rpcUrls": ["https://bsc-dataseed.binance.org/"],
+    "blockExplorerUrls": ["https://bscscan.com/"],
+    "explorer": "https://bscscan.com/",
+    "faucets": ["https://testnet.binance.org/faucet-smart"]
+  },
+  "0x89": {
+    "chainId": "0x89",
+    "name": "Polygon Mainnet",
+    "token": "MATIC",
+    "chainName": "Polygon Mainnet",
+    "nativeCurrency": { "name": "Matic", "symbol": "MATIC", "decimals": 18 },
+    "rpcUrls": ["https://rpc-mainnet.maticvigil.com/"],
+    "blockExplorerUrls": ["https://polygonscan.com/"],
+    "explorer": "https://polygonscan.com/",
+    "faucets": ["https://faucet.matic.network/"]
+  },
+  "80001": {
+    "chainId": "0x13881",
+    "name": "Mumbai",
+    "token": "MATIC",
+    "chainName": "Mumbai Testnet",
+    "nativeCurrency": { "name": "Matic", "symbol": "MATIC", "decimals": 18 },
+    "rpcUrls": ["https://rpc-mumbai.maticvigil.com/"],
+    "blockExplorerUrls": ["https://mumbai.polygonscan.com/"],
+    "explorer": "https://mumbai.polygonscan.com/",
+    "faucets": ["https://mumbaifaucet.com/"]
+  },
+  "0x5de": {
+    "chainId": "0x5de",
+    "name": "BEVM Canary TestNet",
+    "token": "BTC",
+    "chainName": "BEVM Canary TestNet",
+    "nativeCurrency": { "name": "Bitcoin", "symbol": "BTC", "decimals": 18 },
+    "rpcUrls": ["https://canary-testnet.bevm.io/"],
+    "blockExplorerUrls": ["https://scan-canary-testnet.bevm.io/"]
+  },
+  "0x5dd": {
+    "chainId": "0x5dd",
+    "name": "BEVM Canary",
+    "token": "BTC",
+    "chainName": "BEVM Canary",
+    "nativeCurrency": { "name": "Bitcoin", "symbol": "BTC", "decimals": 18 },
+    "rpcUrls": [
+      "https://rpc-canary-1.bevm.io/",
+      "https://rpc-canary-2.bevm.io/"
+    ],
+    "blockExplorerUrls": ["https://scan-canary.bevm.io/"]
+  },
+  "0x58f8": {
+    "chainId": "0x58f8",
+    "name": "MAP Mainnet",
+    "token": "MAPO",
+    "chainName": "MAP Mainnet",
+    "nativeCurrency": { "name": "MAPO", "symbol": "MAP", "decimals": 18 },
+    "rpcUrls": ["https://rpc.maplabs.io"],
+    "blockExplorerUrls": ["https://mapscan.io/"]
+  }
+}
